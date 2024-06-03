@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jogo de Perguntas</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="container">
+    <img class="imagem" src="Calderola" alt="">
+    <div class="questao"> 
+        <h1>Quanto tempo o sangue leva para circular por todo o corpo?</h1>
+    </div>
+    <div class="botoes">
+        <button class="botao" onclick="verificarResposta(1)">15 seg</button>
+        <button class="botao" onclick="verificarResposta(2)">1 min</button>
+        <button class="botao" onclick="verificarResposta(3)">50 seg</button>
+        <button class="botao" onclick="verificarResposta(4)">30 seg</button>
+    </div>
+    <div id="resultado"></div>
+</div>
+<footer class="nomes">
+    <p>Feito na aula de Matematica II- Turma 3°B</p>
+    <p> Por Vitor,Eduardo e Joao Vitor</p>
+</footer>
+
+<audio src="som/silvio-santos-certa-resposta.mp3" id="audio_acerto"></audio>
+<audio src="som/silvio-santos-que-pena-voce-errou.mp3" id="audio_erro"></audio>
+
+<script src="main.js"></script>
+</body>
+</html>
